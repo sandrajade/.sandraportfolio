@@ -1,5 +1,5 @@
 ---
-title: Duvet Genius
+title: Atelier du Sud
 publishDate: 2020-03-04 00:00:00
 img: /assets/blocstext.png
 img_alt: présentation de ce que l'on va trouver dans ce site, bubble up under vibrant lighting
