@@ -24,7 +24,16 @@ const { href } = Astro.props;
 		background: var(--gradient-accent-orange);
 		box-shadow: var(--shadow-md);
 		white-space: nowrap;
-	}
+		backdrop-filter: blur(15px);
+		backface-visibility: hidden;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		white-space: nowrap;
+		border-color: #5C3E78;
+		background: linear-gradient(180deg,#F7ECF2 0%,#5C3E78 49%, #95629C 51%, #5C3E78 100%);
+		border-radius: 5px;
+}
 
 	@media (min-width: 20em) {
 		a {

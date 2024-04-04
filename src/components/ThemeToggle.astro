@@ -39,6 +39,8 @@ import Icon from './Icon.astro';
 		inset: 0;
 		background-color: var(--accent-regular);
 		border-radius: 999rem;
+		border-color: #A8214D;
+		background: linear-gradient(180deg,#F7ECF2 0%,#A8214D 49%,  #E45E8D 51%, #A8214D 100%);
 	}
 
 	:global(.theme-dark) .icon.light::before {
@@ -48,7 +50,9 @@ import Icon from './Icon.astro';
 	:global(.theme-dark) .icon.dark,
 	:global(html:not(.theme-dark)) .icon.light,
 	button[aria-pressed='false'] .icon.light {
-		color: var(--accent-text-over);
+	color: var(--accent-text-over);
+	border-color: #5C3E78;
+	background: linear-gradient(180deg,#F7ECF2 0%,#5C3E78 49%, #95629C 51%, #5C3E78 100%);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
@@ -57,14 +61,16 @@ import Icon from './Icon.astro';
 			transition:
 				transform var(--theme-transition),
 				color var(--theme-transition);
+				border-radius: 50%;
 		}
 	}
 
 	@media (forced-colors: active) {
 		.icon.light::before {
 			background-color: SelectedItem;
-		}
+		
 	}
+}
 </style>
 
 <script>
